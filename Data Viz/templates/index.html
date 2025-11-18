@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>NYC Crash Analysis Website</h1>
+
+<div class="stats">
+    <div class="stat-card">
+        <h2>Total Crashes</h2>
+        <p>{{ total_crashes }}</p>
+    </div>
+    <div class="stat-card">
+        <h2>Total Injuries</h2>
+        <p>{{ total_injuries }}</p>
+    </div>
+    <div class="stat-card">
+        <h2>Total Fatalities</h2>
+        <p>{{ total_fatalities }}</p>
+    </div>
+</div>
+
+{% endblock %}
