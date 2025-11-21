@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nyc-crash-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
