@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="mb-4">Filtered Crash Report</h2>
+
+<h4>Borough Comparison</h4>
+<div class="card p-3 shadow mb-4">
+    {{ borough_plot | safe }}
+</div>
+
+<h4>Monthly Trend</h4>
+<div class="card p-3 shadow mb-4">
+    {{ trend_plot | safe }}
+</div>
+
+<h4>Injuries Breakdown</h4>
+<div class="card p-3 shadow mb-4">
+    {{ injury_plot | safe }}
+</div>
+
+<h4>Heatmap</h4>
+<div class="card p-3 shadow mb-4">
+    <iframe src="/{{ map_path }}" width="100%" height="500" style="border:none;"></iframe>
+</div>
+
+{% endblock %}

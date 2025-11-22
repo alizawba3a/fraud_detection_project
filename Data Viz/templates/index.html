@@ -1,21 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>NYC Crash Analysis Website</h1>
+<h2 class="text-center mb-4">NYC Crash Analysis Website</h2>
 
-<div class="stats">
-    <div class="stat-card">
-        <h2>Total Crashes</h2>
-        <p>{{ total_crashes }}</p>
+<div class="row justify-content-center">
+
+    <div class="col-md-3">
+        <div class="card shadow text-center p-4">
+            <h5>Total Crashes</h5>
+            <h2>{{ total_crashes }}</h2>
+        </div>
     </div>
-    <div class="stat-card">
-        <h2>Total Injuries</h2>
-        <p>{{ total_injuries }}</p>
+
+    <div class="col-md-3">
+        <div class="card shadow text-center p-4">
+            <h5>Total Injuries</h5>
+            <h2>{{ total_injuries }}</h2>
+        </div>
     </div>
-    <div class="stat-card">
-        <h2>Total Fatalities</h2>
-        <p>{{ total_fatalities }}</p>
+
+    <div class="col-md-3">
+        <div class="card shadow text-center p-4">
+            <h5>Total Fatalities</h5>
+            <h2>{{ total_fatal }}</h2>
+        </div>
     </div>
+
 </div>
 
 {% endblock %}
